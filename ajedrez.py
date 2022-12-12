@@ -1,12 +1,4 @@
-def guardar(imprimir_tablero):
-    with open("ajedrez.txt", "a, encoding “utf-8”") as archivo:
-        archivo.write(imprimir_tablero)
-def guardar(movimiento):
-    with open("ajedrez.txt", "a, encoding “utf-8”") as archivo:
-        archivo.write(movimiento)
-def guardar(tablero):
-    with open("ajedrez.txt", "a, encoding “utf-8”") as archivo:
-        archivo.write(tablero)
+
 
 tablero = [[ "♜",   "♞",   "♝",   "♛",   "♚",   "♝",   "♞",  "♜"], #fchas negras
             ["♟",   "♟",   "♟",   "♟",   "♟",   "♟",   "♟",  "♟"],
@@ -42,7 +34,6 @@ def movimiento(tablero):
         tablero[fila2][columna2] = tablero[fila][columna]
         tablero[fila][columna] = " "
         print(imprimir_tablero(tablero))
-        guardar(imprimir_tablero)
     else:
         print("Esa no es una respuesta valida")
 print(movimiento(tablero))
@@ -63,9 +54,6 @@ while True:
         tablero[fila2][columna2] = tablero[fila][columna]
         tablero[fila][columna] = " "
         print(imprimir_tablero(tablero)) 
-        guardar(imprimir_tablero)
     elif respuesta == "no":
-        print("fin del juego, gracias por jugar")
+        print("gracias por jugar")
         break
-
-        
