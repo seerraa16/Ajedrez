@@ -59,3 +59,4 @@ while True: #bucle para hacer infinitos movimientos
     elif respuesta == "no":
         print("Gracias por jugar")
         break
+    #fin
