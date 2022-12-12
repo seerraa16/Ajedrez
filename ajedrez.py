@@ -32,21 +32,9 @@ def movimiento(tablero):
         tablero[fila2][columna2] = tablero[fila][columna]
         tablero[fila][columna] = " "
         print(imprimir_tablero(tablero))
-    elif respuesta == "no":
-        print("El juego ha terminado")
     else:
         print("Esa no es una respuesta valida")
 print(movimiento(tablero))
-
-    
-
-           
-
-
-    
-
-           
-
-
-
+while True:
+  
 
