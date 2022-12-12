@@ -36,6 +36,7 @@ def movimiento(tablero):
         print("Esa no es una respuesta valida")
 print(movimiento(tablero))
 while True:
+    print("¿quiere hacer un movimiento?")
     respuesta = input("si/no: ")
     if respuesta == "si":
         print("ingrese la posicion de la ficha que desea mover")
@@ -54,4 +55,5 @@ while True:
     elif respuesta == "no":
         print("fin del juego, gracias por jugar")
         break
+    
         
