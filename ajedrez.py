@@ -1,5 +1,34 @@
-def ajedrez (): #tablero
-    for i in range(8):
-        print("XO" * 4)
-        print("OX" * 4)
-ajedrez()
+tablero = [[ "♜",   "♞",   "♝",   "♛",   "♚",   "♝",   "♞",  "♜"], #fchas negras
+            ["♟",   "♟",   "♟",   "♟",   "♟",   "♟",   "♟",  "♟"],
+            [" ",    " ",    " ",    " ",    " ",    " ",    " ",    " "],
+            [" ",    " ",   " ",     " ",    " ",    " ",    " ",    " "],
+            [" ",    " ",   " ",    " ",     " ",   " ",    " ",    " "],
+            [" ",    " ",   " ",    " ",    " ",    " ",     " ",    " "],
+            ["♙",   "♙",   "♙",   "♙",  "♙",   "♙",    "♙",  "♙"],
+            ["♖",   "♘",   "♗",  "♕",   "♔",    "♗",    "♘",   "♖"]] #fichas blancas
+
+def imprimir_tablero(tablero):      
+    print("  a b c d e f g h")
+    for i in range(8): #filas
+        print(i+1, end=" ")
+        for j in range(8): #columnas
+            print(tablero[i][j], end=" ")
+        print(i+1)
+print(imprimir_tablero(tablero)) #mostrar tablero en pantalla
+def movimiento(tablero):
+    print("¿quiere hacer un movimiento?")
+    respuesta = input("si/no: ")
+    
+
+    
+
+           
+
+
+    
+
+           
+
+
+
+
