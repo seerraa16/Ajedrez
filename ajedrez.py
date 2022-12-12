@@ -29,7 +29,9 @@ def movimiento(tablero):
         fila2 = int(input("fila: "))
         print("ingrese la columna")
         columna2 = int(input("columna: "))
-        
+        tablero[fila2][columna2] = tablero[fila][columna]
+        tablero[fila][columna] = " "
+    )
 
     
 
