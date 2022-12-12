@@ -48,5 +48,10 @@ while True:
         fila2 = int(input("fila: "))
         print("ingrese la columna")
         columna2 = int(input("columna: "))
-        
+        tablero[fila2][columna2] = tablero[fila][columna]
+        tablero[fila][columna] = " "
+        print(imprimir_tablero(tablero))
+    elif respuesta == "no":
+        print("fin del juego, gracias por jugar")
+        break
         
