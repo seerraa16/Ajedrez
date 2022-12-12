@@ -24,7 +24,12 @@ def movimiento(tablero):
         fila = int(input("fila: "))
         print("ingrese la columna")
         columna = int(input("columna: "))
-   
+        print("ingrese la posicion a la que desea mover la ficha")
+        print("ingrese la fila")
+        fila2 = int(input("fila: "))
+        print("ingrese la columna")
+        columna2 = int(input("columna: "))
+        
 
     
 
