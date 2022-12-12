@@ -36,5 +36,14 @@ def movimiento(tablero):
         print("Esa no es una respuesta valida")
 print(movimiento(tablero))
 while True:
-  
-
+    respuesta = input("si/no: ")
+    if respuesta == "si":
+        print("ingrese la posicion de la ficha que desea mover")
+        print("ingrese la fila")
+        fila = int(input("fila: "))
+        print("ingrese la columna")
+        columna = int(input("columna: "))
+        print("ingrese la posicion a la que desea mover la ficha")
+        print("ingrese la fila")
+        
+        
