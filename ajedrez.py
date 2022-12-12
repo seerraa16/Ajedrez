@@ -1,4 +1,9 @@
-
+def guardar_partida(nombre_archivo, tablero):
+    archivo = open(nombre_archivo, "w")
+    for fila in tablero:
+        for celda in fila:
+            archivo.write(celda)
+        archivo.write("\n")
 
 tablero = [[ "♜",   "♞",   "♝",   "♛",   "♚",   "♝",   "♞",  "♜"], #fchas negras
             ["♟",   "♟",   "♟",   "♟",   "♟",   "♟",   "♟",  "♟"],
@@ -34,6 +39,7 @@ def movimiento(tablero):
         tablero[fila2][columna2] = tablero[fila][columna]
         tablero[fila][columna] = " "
         print(imprimir_tablero(tablero))
+        guardar_partida("partida.txt", tablero)
     else:
         print("Esa no es una respuesta valida")
 print(movimiento(tablero))
@@ -53,7 +59,8 @@ while True:
         columna2 = int(input("columna: "))
         tablero[fila2][columna2] = tablero[fila][columna]
         tablero[fila][columna] = " "
-        print(imprimir_tablero(tablero)) 
+        print(imprimir_tablero(tablero))
+        guardar_partida("partida.txt", tablero) 
     elif respuesta == "no":
         print("gracias por jugar")
         break
