@@ -7,14 +7,16 @@ tablero = [[ "♜",   "♞",   "♝",   "♛",   "♚",   "♝",   "♞",  "♜"
             ["♙",   "♙",   "♙",   "♙",  "♙",   "♙",    "♙",  "♙"],
             ["♖",   "♘",   "♗",  "♕",   "♔",    "♗",    "♘",   "♖"]] #fichas blancas
 
-def imprimir_tablero(tablero):
+def imprimir_tablero(tablero):      
     print("  a b c d e f g h")
-    for i in range(8):
+    for i in range(8): #filas
         print(i+1, end=" ")
-        for j in range(8):
+        for j in range(8): #columnas
             print(tablero[i][j], end=" ")
         print(i+1)
+print(imprimir_tablero(tablero)) #mostrar tablero en pantalla
 
+           
 
 
 
